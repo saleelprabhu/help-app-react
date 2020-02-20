@@ -1,10 +1,5 @@
 import React from 'react';
 
-/*
-Paginate component to add paging in case of multiple search results
-Splits the posts per page from total posts and displays the page numbers
-*/
-
 const Pagination = ({ postsPerPage, totalPosts, paginate}) => {
     const pageNumbers = [];
 

@@ -29,12 +29,6 @@ class SearchContent extends Component{
       );
     }
 
-/* 
-Call function on clicking search button or 'Enter' Key
-- Validate if entered text is blank nad return error
-- Send Get request on valid text entry - call thunk function
-*/
-
     searchData(event){
       event.preventDefault();
       
@@ -47,19 +41,11 @@ Call function on clicking search button or 'Enter' Key
     }
 }
 
-/* 
-Map redux store to the component props
-*/
-
 const mapStateToProps = state => {
   return {
     contentData: state
   }
 }
-
-/* 
-Apply Thunk Middleware to the component props
-*/
 
 const mapDispatchToProps = (dispatch) => {
   return {

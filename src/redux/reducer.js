@@ -5,22 +5,11 @@ import {
     FETCH_CONTENT_ERROR
 } from './actiontypes';
 
-/* 
-Initial State for redux store
-- Loading : (true/false) Can be extended to loading-spinner
-- Content : Array of content received from server
-- Error : Error message in case of error in server response
-*/
-
 const initialState = {
     loading: false,
     content: [],
     error:''
 }
-
-/* 
-Reducer function for all action types
-*/
 
 export const contentReducer = (state=initialState,action) => {
     switch(action.type){

@@ -4,26 +4,8 @@ import {Link} from 'react-router-dom'
 // Included to setup pagination
 import Pagination from './pagination'
 
-/* 
-Function returns 
-- Loading message : in case axios.get method response is not received
-- Error message : in case axios.get method returns error
-- Response Data [Valid Content or Empty] based on knowledge base
-    No data found
-    Content Array
-*/
-
 const Suggestions = (props) => {
 
-/*
-Below steps are to add Pagination for the searched posts
-- Get Index of first and last posts based on current page and posts per page values
-- Display only the part of entire posts according to obtained indices
-- On click event of page, change the active page number, thereby updating indices and posts to be displayed
-- Add Pagination object at the end of page
-
-On pressing back button from display details - returns the first page rather than current page - needs to be fix
-*/
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(3);
 
